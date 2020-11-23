@@ -4,7 +4,7 @@
 
 Let's add mongo database to our express app.
 
-### Installing & Running MongoDB (Mac)
+### OUTDATED Installing & Running ~~MongoDB~~ (Mac)
 
 Tree House has a good article on how to get started with MongoDB:
 
@@ -29,6 +29,27 @@ Here is an excerpt of their instructions:
 Reach out to me if you don't have a Mac machine or the instructions don't work for you. I don't mind helping you out. You can also google "How to install and run MongoDB on Windows"
 
 Just remember you need to run mongo db just like you would run an express app. It's a service that needs to be running in the background. It even has a dedicated port!
+
+
+### UPDATED Installing & Running MongoDB-Community (Mac)
+
+Apperantly mongoDB has been removed from brew. One alterantive way of getting started with Mongo database is to use MongoDB-Community. Use the follwing link to find out more:
+
+[# The MongoDB Homebrew Tap](https://github.com/mongodb/homebrew-brew)
+
+But it basically comes down to the following three commands:
+
+    brew tap mongodb/brew
+
+Then  
+
+    brew install mongodb-community
+
+and then the following to start it
+
+    brew services start mongodb-community
+
+Note: You need to have brew installed before you run the above commands
 
 ### Connecting to MongoDB from Express
 
